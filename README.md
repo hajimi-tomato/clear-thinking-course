@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <strong>零基础 · 全中文 · 10 天课程 · 50 道现实案例 · 30 场对话练习</strong>
+  <strong>零基础 · 全中文 · 10 天课程<br>50 道现实案例 · 30 场对话练习</strong>
 </p>
 
 <p align="center">
