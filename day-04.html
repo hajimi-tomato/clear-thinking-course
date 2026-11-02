@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="第 4 天：统计与概率直觉。中文讲解、互动练习、五道盲测、智能对话与现实复盘。">
+<title>第 4 天｜统计与概率直觉 · 把话想明白</title><link rel="stylesheet" href="styles.css">
+<script>window.courseTerms={"分母": ["计算比例时作为整体的数量。", "例：3 人成功、共 10 人尝试，成功比例是 3/10；不知道总人数就难评价。"], "样本": ["被实际观察或调查的一部分对象。", "例：只问购买过课程的人，无法直接代表所有潜在客户。"], "抽样偏差": ["样本进入调查的方式让某些人系统性地更容易被选中。", "例：只在高价会员群调查价格接受度。"], "幸存者偏差": ["只看到留下来的成功者，忽略没有留下记录的失败者。", "例：只采访创业成功者就推断创业成功率很高。"], "中位数": ["把数值从小到大排好后位于中间的数。", "例：五人工资为 4、5、5、6、30 万，中位数是 5 万。"], "基础概率": ["在考虑个别线索前，目标事件在相关人群中原本有多常见。", "例：判断检测结果时，先看疾病在该人群中有多常见。"], "辛普森悖论": ["分组比较与合并比较得出相反方向，通常与各组权重不同有关。", "例：两组中甲都更好，合在一起却可能乙更高。"], "均值回归": ["极端高或低的结果，后续测量常自然地更接近通常水平。", "例：一次异常低分后变好，不一定全是新方法的功劳。"]};</script><script defer src="script.js"></script></head>
+<body class="lesson-page" data-day="04"><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">明</span><span>把话想明白</span></a><a class="header-link" href="index.html">返回课程首页 <span aria-hidden="true">↗</span></a></header>
+<div class="lesson-layout"><aside class="lesson-aside" aria-label="本日目录"><div class="aside-inner"><p class="aside-label">第 4 天 / 共 10 天</p><h2>统计与概率直觉</h2><nav><a href="#start">开始</a><a href="#learn">01 核心知识</a><a href="#practice">02 穿插练习</a><a href="#blind-test">03 案例盲测</a><a href="#answers">04 答案解析</a><a href="#roleplay">05 智能对话</a><a href="#review">06 现实复盘</a><a href="#glossary">本日术语</a></nav><div class="aside-progress"><span>本日互动进度</span><strong id="progress-text">0 / 9</strong><div class="progress-track"><span id="progress-fill"></span></div><small>仅保存在当前浏览器</small></div></div></aside>
+<main class="lesson-main"><section class="lesson-hero" id="start"><div class="lesson-hero-inner"><p class="eyebrow">第 4 天 · 约 4 小时 · 零基础</p><h1>数字是真的，<br><em>结论就一定对吗？</em></h1><p class="lesson-intro">今天不靠复杂公式，而是训练看数字的四个动作：找分母、看样本、核口径、还原绝对数。你会发现，很多误导不是凭空捏造数字，而是让一个真实数字承担它证明不了的结论。</p><div class="lesson-meta"><span>精讲 60 分钟</span><span>盲测 60 分钟</span><span>对话 90 分钟</span><span>复盘 30 分钟</span></div></div></section>
+<div class="lesson-content"><section class="lesson-section opening"><span class="section-index">今天的目标</span><h2>学完后，你要能做到三件事。</h2><div class="goal-grid"><div><b>01</b><p>把百分比还原成分子与分母，检查绝对变化。</p></div><div><b>02</b><p>判断样本如何产生，是否能代表目标人群。</p></div><div><b>03</b><p>解释数据结论的适用范围与主要不确定性。</p></div></div><p class="note">通关标准：面对一张宣传图或小型报表，能问出分母、样本来源、比较口径与原始数值，并写出不过度推广的结论。</p></section>
+<section class="lesson-section" id="learn"><span class="section-index">01 / 核心知识 · 建议 60 分钟</span><h2>漂亮数字，先问四个问题。</h2><p>统计是把许多观察压缩成一句话。压缩会丢失细节，尤其可能丢掉谁被算进来、谁没有被算进来。先把这些细节找回来，再谈‘涨了多少’和‘代表什么’。</p><div class="concept-stack"><article class="concept-card"><span class="concept-num">1 / 6</span>
+      <h3>百分比先还原成几个人</h3><p>‘增长 200%’听起来很大。若客户从 1 人变成 3 人，确实增长了 200%，但绝对变化只有 2 人。相对变化与绝对变化都是真信息，回答的是不同问题。</p><p>还要问<button class="term" data-term="分母">分母</button>属于哪个时间段、哪个人群，以及前后口径是否一致。把旧口径的一百人与新口径的两百人直接比较，可能连增长方向都说不准。</p>
+      <div class="dialogue"><span>现实中的一句话</span><p>“本月成交人数暴涨 200%，说明业务已经起飞。”</p></div>
+      <div class="comparison"><div><small>容易误判</small><p>只看到 200%，不问从多少人变到多少人。</p></div><div><small>更准确的看法</small><p>若从 1 人到 3 人，值得继续观察，尚不能断定业务稳定起飞。</p></div></div>
+      <p><strong>可以这样问：</strong>请给出上月、本月的实际人数，以及两个月采用的成交定义。</p></article><article class="concept-card"><span class="concept-num">2 / 6</span>
+      <h3>样本从哪里来，比样本有多大更重要</h3><p><button class="term" data-term="样本">样本</button>很大也可能有<button class="term" data-term="抽样偏差">抽样偏差</button>。只向已购买、愿意留下评价的客户发问卷，得到的满意比例不能直接推广到所有客户。</p><p>抽样前先确定目标人群：你要了解‘使用过产品的人’，还是‘所有可能购买的人’？若目标人群没说清，所谓‘九成用户’就可能指九成回复问卷的人。</p>
+      <div class="dialogue"><span>现实中的一句话</span><p>“我们调查了一万名粉丝，九成认为课程值得买。”</p></div>
+      <div class="comparison"><div><small>容易误判</small><p>一万人足够多，所以一定能代表所有人。</p></div><div><small>更准确的看法</small><p>粉丝与普通潜在用户可能不同，问卷措辞也可能影响回答。</p></div></div>
+      <p><strong>可以这样问：</strong>调查对象如何招募？没有回复的人有多少？问卷原题是什么？</p></article><article class="concept-card"><span class="concept-num">3 / 6</span>
+      <h3>均值不是每个人的典型处境</h3><p>几个人收入极高，会把平均值拉高。<button class="term" data-term="中位数">中位数</button>告诉我们排在中间的人大致处于什么位置；但<button class="term" data-term="中位数">中位数</button>也不能单独说明最低值、最高值和分布差异。</p><p>看工资、消费或业绩时，最好一起看<button class="term" data-term="样本">样本</button>数、均值、<button class="term" data-term="中位数">中位数</button>与分布。若有人只报一个数字，先问这个数字适合回答什么问题。</p>
+      <div class="dialogue"><span>现实中的一句话</span><p>“我们学员平均年薪三十万，报名后你也能达到。”</p></div>
+      <div class="comparison"><div><small>容易误判</small><p>把学员均值当作新学员可预期的结果。</p></div><div><small>更准确的看法</small><p>需要知道入学前收入、毕业人数、未就业者及中位数。</p></div></div>
+      <p><strong>可以这样问：</strong>这个平均值包含多少人？没有就业的人算进去了吗？入学前收入是多少？</p></article><article class="concept-card"><span class="concept-num">4 / 6</span>
+      <h3>相关人群的基础概率不能跳过</h3><p>一个显眼线索会让我们忘记某事原本有多罕见。例如一个创业故事很精彩，不代表同类创业普遍成功。</p><p><button class="term" data-term="基础概率">基础概率</button>不是命运，更不能直接替某个个人作决定。它是一个起点，再结合个人条件和新证据调整判断。</p>
+      <div class="dialogue"><span>现实中的一句话</span><p>“我认识两位辍学创业者都成功了，所以辍学创业很有前景。”</p></div>
+      <div class="comparison"><div><small>容易误判</small><p>只看两位成功者，忽略所有尝试者。</p></div><div><small>更准确的看法</small><p>先查同类人群的整体结果，再看两位有何特殊资源。</p></div></div>
+      <p><strong>可以这样问：</strong>做同样选择的人总共有多少？结果如何分布？</p></article><article class="concept-card"><span class="concept-num">5 / 6</span>
+      <h3>分组方向和总体方向可能相反</h3><p><button class="term" data-term="辛普森悖论">辛普森悖论</button>提醒我们：总体比例会受到每组人数权重影响。若甲在容易任务和困难任务中都略优于乙，但甲承担了更多困难任务，总体成功率仍可能看起来低于乙。</p><p>它不是说‘分组结果一定比总体正确’。先明确要回答的问题：比较人员能力，还是比较整个业务最后的产出？两者可能都需要看，但含义不同。</p>
+      <div class="dialogue"><span>现实中的一句话</span><p>“甲组总体转化率低，所以甲组每个渠道都比乙差。”</p></div>
+      <div class="comparison"><div><small>容易误判</small><p>把总体差异直接推到每个渠道。</p></div><div><small>更准确的看法</small><p>按渠道拆开，同时说明不同渠道的客户数量与难度。</p></div></div>
+      <p><strong>可以这样问：</strong>能否把两组按同一渠道分别比较，并列出各渠道人数？</p></article><article class="concept-card"><span class="concept-num">6 / 6</span>
+      <h3>极端之后的回落，不要急着归功或归咎</h3><p>异常好的一周之后变普通、异常差的一次考试之后恢复正常，都可能有<button class="term" data-term="均值回归">均值回归</button>的成分。若此时恰好换了管理方法，不能只凭先后关系说新方法造成了全部变化。</p><p>独立随机事件也不会因为前面连输而‘欠你一次赢’。这两个现象不同：<button class="term" data-term="均值回归">均值回归</button>说的是极端测量后的常见变化，赌徒式想法把独立事件当作有记忆。</p>
+      <div class="dialogue"><span>现实中的一句话</span><p>“上周业绩最差，周一批评后这周回升，证明批评特别有效。”</p></div>
+      <div class="comparison"><div><small>容易误判</small><p>把回升全归功于批评。</p></div><div><small>更准确的看法</small><p>比较其他团队、季节变化和更长时间的表现。</p></div></div>
+      <p><strong>可以这样问：</strong>如果没有这次批评，按过去波动情况本周可能恢复多少？</p></article></div><div class="worked-example"><span class="section-index">完整示范 / 看一次怎么做</span><h3>‘增长 200%’与‘九成满意’怎样同时看</h3><ol><li>业务量从 1 单升到 3 单：相对增长 200%，绝对增加 2 单。两种说法均可保留。</li><li>九成满意来自 10 名填写问卷的人；另外 40 名用户没有回复。不能直接写‘九成用户满意’。</li><li>若问题写成‘您是否认同我们优秀的新功能’，回答可能受措辞影响；需要查看原题。</li><li>较稳妥的汇报：本月 3 单、比上月多 2 单；10 名回复问卷者中 9 人给出积极评价，仍需扩大与改进调查。</li></ol><div class="response-box"><span>可以这样回应</span><p>“增长率和满意比例都值得看，但目前基数与回复人数很小。请同时报告原始数量、问卷原题和未回复人数，我们再决定是否扩大投入。”</p></div><p class="fine-print">数据少不等于‘没有价值’；它可以提示下一步该收集什么，只是不能独自承担强结论。</p></div></section>
+<section class="lesson-section" id="practice"><span class="section-index">02 / 穿插练习 · 每题 1–3 分钟</span><h2>现在，换你判断。</h2><p>每道题先选答案，再看反馈。答错时不要只记选项，找出自己混淆了哪两件事。</p><div class="quiz" data-quiz="q1" data-answer="b"><div class="quiz-head"><span>练习 01 · 还原基数</span><strong>单选</strong></div>
+      <h3>客户从 1 人增加到 3 人，增长 200%。哪种表达最准确？</h3><label><input type="radio" name="q1" value="a"> 数字一定造假</label><label><input type="radio" name="q1" value="b"> 相对增长 200%，绝对增加 2 人</label><label><input type="radio" name="q1" value="c"> 业务已经稳定扩张</label><button class="button small quiz-submit" type="button">检查答案</button>
+      <div class="quiz-feedback" aria-live="polite" data-correct="对。两个数字都应报告，再判断规模是否足够支持后续结论。" data-wrong="增长率可以是真的；关键是它背后的原始人数。"></div></div><div class="quiz" data-quiz="q2" data-answer="b"><div class="quiz-head"><span>练习 02 · 检查样本</span><strong>单选</strong></div>
+      <h3>只在高价会员群调查涨价接受度，最大的风险是什么？</h3><label><input type="radio" name="q2" value="a"> 样本太小必然无效</label><label><input type="radio" name="q2" value="b"> 受访者不能代表所有潜在客户</label><label><input type="radio" name="q2" value="c"> 所有会员都会撒谎</label><button class="button small quiz-submit" type="button">检查答案</button>
+      <div class="quiz-feedback" aria-live="polite" data-correct="对。样本进入调查的方式可能带来系统性偏差。" data-wrong="问题在于‘问的是谁’，不是先猜他们是否诚实。"></div></div><div class="quiz" data-quiz="q3" data-answer="b"><div class="quiz-head"><span>练习 03 · 读总体与分组</span><strong>单选</strong></div>
+      <h3>两组总体成功率不同，是否能立刻推出每个子任务也同方向不同？</h3><label><input type="radio" name="q3" value="a"> 能，总体代表全部</label><label><input type="radio" name="q3" value="b"> 不能，要看分组和各组权重</label><label><input type="radio" name="q3" value="c"> 只看分组，永远忽略总体</label><button class="button small quiz-submit" type="button">检查答案</button>
+      <div class="quiz-feedback" aria-live="polite" data-correct="对。总体和分组回答的问题不同，权重可能改变比较方向。" data-wrong="先看分组人数和任务难度，再判断总体差异代表什么。"></div></div><div class="short-task" data-task="rewrite"><div class="quiz-head"><span>练习 04 · 自己说一句</span><strong>改写</strong></div><h3>销售说：“我们的培训学员平均年薪三十万，你学完也能达到。”写一句具体追问。</h3><p>至少问到样本范围、学前情况或中位数中的两项。</p><textarea rows="4" placeholder="在这里写下你的回应……" aria-label="写下你的回应"></textarea><button class="button small task-reveal" type="button">写好了，查看示范</button><div class="task-feedback" hidden><strong>一种回应</strong><p>“这三十万统计了多少毕业学员？未就业者是否算在内？他们入学前的收入和毕业后的中位数分别是多少？”</p><p>自检：追问是否指向可提供的原始数据？有没有把‘均值可能误导’说成‘均值必然是假’？</p></div></div><div class="quick-reference"><span class="section-index">今天能带走的三句提问</span><div><b>①</b><p>“这个百分比的分子和分母分别是多少？”</p></div><div><b>②</b><p>“这些人是怎么被选进样本的？没被算进去的人是谁？”</p></div><div><b>③</b><p>“按同一口径分组后，结论还成立吗？”</p></div></div></section>
+<section class="lesson-section" id="blind-test"><span class="section-index">03 / 案例盲测 · 建议 60 分钟</span><h2>五道题，先独立判断。</h2><p>每题建议用 8–10 分钟。写出关键问题、需要核实的东西，以及一句现实中能说出口的回应。提交后才能查看该题解析。</p><div class="case-list"><article class="case" data-case="1"><div class="case-top"><span>案例 01 / 季度汇报</span><span>建议 8–10 分钟</span></div>
+      <h3>两单变六单的增长奇迹</h3><p>运营主管在会上展示一张大字海报：“新渠道季度成交暴涨 200%，满意度高达 95%！”你翻到附录，发现成交从上季度 2 单变成本季度 6 单；满意度来自二十名主动完成问卷的人，其中十九人选择满意，但该渠道共服务了二百多名客户。主管接着建议把其他渠道预算砍半，全部转到新渠道，并说：“数字已经说明问题，谁再犹豫就是错过增长。”你需要在会上给出不失礼的回应。</p><label for="case-1-answer">你的拆解与回应</label>
+      <textarea id="case-1-answer" rows="6" placeholder="关键问题：……&#10;需要核实：……&#10;我会这样说：……"></textarea>
+      <button class="button small case-reveal" type="button">提交并查看解析</button>
+      <div class="case-answer" hidden><strong>拆解参考</strong><p><b>关键问题：</b>增长率与问卷比例可算对，但成交基数小、回复者自选；这些数字不足以单独支持大规模预算转移。</p><p><b>回应示范：</b>“新渠道从 2 单到 6 单值得继续测试。做预算转移前，请补充获客成本、全部客户的反馈与至少几轮稳定表现；现阶段先扩大试验规模更合适。”</p><p class="answer-note">不能因为样本小就否定新渠道，只能限制可得出的结论。</p></div></article><article class="case" data-case="2"><div class="case-top"><span>案例 02 / 招聘广告</span><span>建议 8–10 分钟</span></div>
+      <h3>“人均月薪两万”</h3><p>一家培训机构广告写：“毕业学员人均月薪两万，转行只要三个月。”你索要统计说明，客服发来十位学员的薪资表：其中一位原本就是高收入从业者，毕业后月薪十万；另有几位月薪在六千至一万之间。表格只收录主动分享薪资的人，没有写本期一共多少人报名、多少人毕业、多少人尚未就业。客服说：“平均数总不可能骗人吧？你只要照着学，就能复制他们的结果。”</p><label for="case-2-answer">你的拆解与回应</label>
+      <textarea id="case-2-answer" rows="6" placeholder="关键问题：……&#10;需要核实：……&#10;我会这样说：……"></textarea>
+      <button class="button small case-reveal" type="button">提交并查看解析</button>
+      <div class="case-answer" hidden><strong>拆解参考</strong><p><b>关键问题：</b>均值可能被极高收入者拉高；主动上报与未就业者缺失会影响代表性；无法由该均值推出新学员个人结果。</p><p><b>回应示范：</b>“平均数可以如实计算，但我还需要中位数、完整毕业人数、未就业人数，以及学员入学前收入，才能判断这门课对我是否合适。”</p><p class="answer-note">题干不能证明机构故意造假，只能指出广告结论依据不足。</p></div></article><article class="case" data-case="3"><div class="case-top"><span>案例 03 / 加盟宣传</span><span>建议 8–10 分钟</span></div>
+      <h3>只参观赚钱的门店</h3><p>奶茶品牌邀请你参加加盟说明会。主讲人带大家参观三家排队很长的门店，说：“看见了吗？我们加盟商只要照这个模式做，半年回本很常见。”你问附近是否有关闭或转让的门店，他说：“做不好的肯定是不够努力，不值得参考。”会场展示的案例都来自总部挑选，未提供过去两年所有加盟门店数量、关店率、租金和不同城市的盈利分布。你手上的积蓄只能承担有限试错，必须判断证据是否足够。</p><label for="case-3-answer">你的拆解与回应</label>
+      <textarea id="case-3-answer" rows="6" placeholder="关键问题：……&#10;需要核实：……&#10;我会这样说：……"></textarea>
+      <button class="button small case-reveal" type="button">提交并查看解析</button>
+      <div class="case-answer" hidden><strong>拆解参考</strong><p><b>关键问题：</b>只展示仍在经营且表现好的门店，容易产生幸存者偏差；不能从成功案例估算整体回本概率。</p><p><b>回应示范：</b>“三家门店说明有人做得好。请提供同期开店总数、关店数、各店成本和回本时间分布，我再判断这个模式是否适合我所在的位置。”</p><p class="answer-note">成功案例仍有学习价值，但不应被误用为整体成功率。</p></div></article><article class="case" data-case="4"><div class="case-top"><span>案例 04 / 医疗宣传</span><span>建议 8–10 分钟</span></div>
+      <h3>‘风险翻倍’意味着什么</h3><p>一张健康海报写：“某行为会让罕见问题的发生风险翻倍，必须立即购买我们的防护套餐。”海报脚注显示原风险约为十万人中一人，观察组约为十万人中两人，但没有说明两组人是否在年龄、健康状况等方面相近。销售强调：“两倍就是两倍，你难道敢拿健康冒险？”你既不想轻视风险，也不想只凭相对百分比购买套餐，更不知道套餐是否能改变该风险。</p><label for="case-4-answer">你的拆解与回应</label>
+      <textarea id="case-4-answer" rows="6" placeholder="关键问题：……&#10;需要核实：……&#10;我会这样说：……"></textarea>
+      <button class="button small case-reveal" type="button">提交并查看解析</button>
+      <div class="case-answer" hidden><strong>拆解参考</strong><p><b>关键问题：</b>相对风险翻倍与绝对风险每十万人增加约一人同时成立；因果关系、适用人群和套餐效果均未在海报中证明。</p><p><b>回应示范：</b>“请同时说明绝对风险、研究对象和两组差异；购买套餐还需要独立证据证明它确实能降低这一风险。”</p><p class="answer-note">具体健康决策需要可靠的专业资料；课程只训练数字解读。</p></div></article><article class="case" data-case="5"><div class="case-top"><span>案例 05 / 多渠道报表</span><span>建议 8–10 分钟</span></div>
+      <h3>总体更差，分组却更好</h3><p>甲团队与乙团队分别服务新客和老客。汇总报表显示，甲团队总体成交率低于乙团队，负责人准备据此扣甲团队绩效。你分开看后发现，甲在新客与老客两组内的成交率都略高于乙；只是甲承担了更多难转化的新客，乙主要服务容易成交的老客。负责人反问：“总体结果就是更差，难道还要否认账面上的数字？”你需要说明两个视角各自回答什么问题，同时提出更公平的比较方法。</p><label for="case-5-answer">你的拆解与回应</label>
+      <textarea id="case-5-answer" rows="6" placeholder="关键问题：……&#10;需要核实：……&#10;我会这样说：……"></textarea>
+      <button class="button small case-reveal" type="button">提交并查看解析</button>
+      <div class="case-answer" hidden><strong>拆解参考</strong><p><b>关键问题：</b>总体率确实较低，但两队客户构成不同；比较团队转化能力时，应在相近客户类型中比较，并说明权重。</p><p><b>回应示范：</b>“总体成交结果我们不否认。若要评价团队能力，请同时按新客、老客分别看转化率和人数，再讨论任务分配差异。”</p><p class="answer-note">分组结果也不自动决定绩效，还需检查其他工作职责和考核目标。</p></div></article></div></section>
+<section class="lesson-section answer-divider" id="answers"><span class="section-index">04 / 答案解析</span><h2>答案就在每道题后面。</h2><p>完成某题后即可展开解析。示范回答提供一种可行路径，不要求你逐字照背。</p><div class="rubric"><h3>用四个问题给自己评分</h3><ol><li>有没有准确说出对方的原话与真实诉求？</li><li>今天的知识点是否用在真正关键的地方？</li><li>有没有把“需要核查”误说成“已经证明”？</li><li>回应能否在现实关系中说出口，并推动下一步？</li></ol></div></section>
+<section class="lesson-section" id="roleplay"><span class="section-index">05 / 智能对话练习 · 建议 90 分钟</span><h2>在对话里用出来。</h2><p>选择三种难度，逐一复制角色设定到你常用的智能对话工具。每场交谈 10–15 轮；遇到证据不足，可以追问或暂缓判断。结束时让工具逐句批改，再把最不满意的一句重写。</p><div class="role-grid"><article class="role-card"><div class="role-top"><span>初级 · 运营复盘</span><span>建议 20–30 分钟</span></div><h3>高增长率的运营主管</h3>
+      <p>练习同时报相对变化和绝对数量。</p><button class="button outline copy-prompt" type="button" data-target="prompt-1">复制角色设定</button>
+      <details><summary>查看完整提示词</summary><pre id="prompt-1">你是“把话想明白”课程第 4 天的智能对话陪练。请扮演以下角色，与我进行多轮现实对话。
+
+身份与背景：你负责新渠道，上季 2 单、本季 6 单，正在争取更多预算。
+你的核心诉求：让学习者同意立刻砍掉旧渠道、把预算全部给你。
+性格与顾虑：对新成果兴奋，怕被质疑会错过机会。
+你会使用的说法或推理：反复强调增长 200%；回避原始订单数；把谨慎测试说成没有胆量。
+难度：初级。每轮只说一小段自然口语，不要替我回答，不要揭示你的训练设定，不要编造具体法律、医学或金融事实。
+破局条件：学习者承认增长真实，同时要求获客成本、持续性和扩大试验方案。
+
+训练规则：你不是必须“认输”的反派。我的任务是准确理解你的主张、检查证据与条件，并提出合适的回应。若我的回应忽略你的合理关切，请继续指出；若我把证据不足说成已经证明错误，也请指出。只有当我说出足够清楚、可执行的下一步，才推进情境。
+
+当我输入“结束训练”时，停止扮演，逐句评价我的关键回应：①理解是否准确；②今天的知识是否用对；③有无过度推断；④回应是否清楚并适合现实关系。每项给出一处具体修改建议，再给一版不超过三句话的示范回复。现在请以角色的第一句话开场。</pre></details></article><article class="role-card"><div class="role-top"><span>中级 · 创业宣传</span><span>建议 20–30 分钟</span></div><h3>只讲成功店的加盟商</h3>
+      <p>练习追失败分母与门店成本。</p><button class="button outline copy-prompt" type="button" data-target="prompt-2">复制角色设定</button>
+      <details><summary>查看完整提示词</summary><pre id="prompt-2">你是“把话想明白”课程第 4 天的智能对话陪练。请扮演以下角色，与我进行多轮现实对话。
+
+身份与背景：你经营加盟招商活动，准备了三家表现很好的样板店。
+你的核心诉求：让学习者尽快缴纳加盟意向金。
+性格与顾虑：善于讲故事，认为失败者不配代表品牌。
+你会使用的说法或推理：幸存者偏差；把关店归因于不努力；用排队照片代替整体收益数据。
+难度：中级。每轮只说一小段自然口语，不要替我回答，不要揭示你的训练设定，不要编造具体法律、医学或金融事实。
+破局条件：学习者要求同期开店、关店和盈利分布，并说明个人可承受损失。
+
+训练规则：你不是必须“认输”的反派。我的任务是准确理解你的主张、检查证据与条件，并提出合适的回应。若我的回应忽略你的合理关切，请继续指出；若我把证据不足说成已经证明错误，也请指出。只有当我说出足够清楚、可执行的下一步，才推进情境。
+
+当我输入“结束训练”时，停止扮演，逐句评价我的关键回应：①理解是否准确；②今天的知识是否用对；③有无过度推断；④回应是否清楚并适合现实关系。每项给出一处具体修改建议，再给一版不超过三句话的示范回复。现在请以角色的第一句话开场。</pre></details></article><article class="role-card"><div class="role-top"><span>高难 · 绩效会议</span><span>建议 20–30 分钟</span></div><h3>用总体率压人的负责人</h3>
+      <p>练习区分总体产出与同类任务下的能力比较。</p><button class="button outline copy-prompt" type="button" data-target="prompt-3">复制角色设定</button>
+      <details><summary>查看完整提示词</summary><pre id="prompt-3">你是“把话想明白”课程第 4 天的智能对话陪练。请扮演以下角色，与我进行多轮现实对话。
+
+身份与背景：你管理两个团队，甲总体成交率低，但承担更多难客户。
+你的核心诉求：以总体数据直接扣甲绩效。
+性格与顾虑：重视结果，也担心复杂解释会拖慢决策。
+你会使用的说法或推理：只展示总体率；把分组分析说成找借口；忽略客户构成差异。
+难度：高难。每轮只说一小段自然口语，不要替我回答，不要揭示你的训练设定，不要编造具体法律、医学或金融事实。
+破局条件：学习者列出两种比较各自回答的问题，用简短分组表提出下一步评估。
+
+训练规则：你不是必须“认输”的反派。我的任务是准确理解你的主张、检查证据与条件，并提出合适的回应。若我的回应忽略你的合理关切，请继续指出；若我把证据不足说成已经证明错误，也请指出。只有当我说出足够清楚、可执行的下一步，才推进情境。
+
+当我输入“结束训练”时，停止扮演，逐句评价我的关键回应：①理解是否准确；②今天的知识是否用对；③有无过度推断；④回应是否清楚并适合现实关系。每项给出一处具体修改建议，再给一版不超过三句话的示范回复。现在请以角色的第一句话开场。</pre></details></article></div><div class="role-reflection"><h3>对话后，自己再复盘三句</h3><ol><li>我找到的关键问题是什么？</li><li>我有没有为了快速回应而忽略不确定之处？</li><li>如果重来一次，我最想改哪一句？</li></ol><label class="done-check"><input id="roleplay-done" type="checkbox"> 我已完成至少一场对话练习</label></div></section>
+<section class="lesson-section" id="review"><span class="section-index">06 / 现实复盘 · 建议 30 分钟</span><h2>把今天带回现实。</h2><div class="homework-grid"><article><span>任务 01 · 旧报表</span><h3>给一个增长数字补齐底座</h3><p>找近期见过的增长率、成功率或满意率，写下分子、分母、时间范围、样本来源和绝对变化。若找不到某项，明确写‘未提供’，不要猜。</p><small>自检：是否保留原始数字？是否区分‘未提供’与‘一定有问题’？</small></article><article><span>任务 02 · 外部数字</span><h3>重写一条夸张的数字结论</h3><p>找一张广告图或一篇含数字的公开文章，将其最强结论改写为现有证据真正支持的范围，并提出两项最有价值的补充数据。</p><small>自检：新结论是否既不过度相信，也不过度否定？</small></article></div><div class="finish-box"><h3>今天的完成标记</h3><p>完成三道选择题、一道改写、五道案例和至少一场对话练习后，再标记本日完成。学习记录只保存在当前浏览器。</p><button class="button primary" id="complete-day" type="button">标记第 4 天已完成</button><span id="complete-status" role="status"></span></div></section>
+<section class="lesson-section glossary-section" id="glossary"><span class="section-index">本日术语 / 悬浮或点击高亮词查看</span><h2>今天出现的专有名词。</h2><dl><div><dt>分母</dt><dd>计算比例时作为整体的数量。</dd></div><div><dt>样本</dt><dd>被实际观察或调查的一部分对象。</dd></div><div><dt>抽样偏差</dt><dd>样本进入调查的方式让某些人系统性地更容易被选中。</dd></div><div><dt>幸存者偏差</dt><dd>只看到留下来的成功者，忽略没有留下记录的失败者。</dd></div><div><dt>中位数</dt><dd>把数值从小到大排好后位于中间的数。</dd></div><div><dt>基础概率</dt><dd>在考虑个别线索前，目标事件在相关人群中原本有多常见。</dd></div><div><dt>辛普森悖论</dt><dd>分组比较与合并比较得出相反方向，通常与各组权重不同有关。</dd></div><div><dt>均值回归</dt><dd>极端高或低的结果，后续测量常自然地更接近通常水平。</dd></div></dl></section>
+<section class="lesson-section sources-section"><span class="section-index">本日参考</span><h2>这些方法从哪里来。</h2><p>调查样本与问题措辞参考美国公众舆论研究协会的公开实践标准；本日的统计例子用于训练口径判断。 本日对话与盲测案例为教学创作，不对应具体真实人物或机构。</p><ul><li><a href="https://aapor.org/standards-and-ethics/best-practices/" target="_blank" rel="noopener noreferrer">调查研究最佳实践 · 美国公众舆论研究协会 ↗</a></li><li><a href="https://aapor.org/polling-accuracy/" target="_blank" rel="noopener noreferrer">调查准确性与误差 · 美国公众舆论研究协会 ↗</a></li></ul></section>
+<div class="lesson-end"><span>第 4 天 / 完</span><h2>数字先还原，<br>结论才站得稳。</h2><div class="lesson-end-links"><a href="day-03.html">← 上一天</a><a href="index.html">返回十天路线 ↗</a><a href="day-05.html">下一天 →</a></div></div></div></main></div>
+<div class="term-popover" id="term-popover" role="tooltip" hidden><button class="popover-close" type="button" aria-label="关闭解释">×</button><strong id="term-title"></strong><p id="term-definition"></p><small id="term-example"></small></div></body></html>
