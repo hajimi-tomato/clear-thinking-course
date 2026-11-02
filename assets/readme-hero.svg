@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">把话想明白：十天现实逻辑与精准沟通</title>
+  <desc id="desc">深绿色和浅米色的课程封面，展示从听懂、核查到回应的学习过程。</desc>
+  <rect width="1200" height="430" fill="#f3f5ec"/>
+  <rect x="28" y="28" width="1144" height="374" rx="18" fill="#203b2c"/>
+  <path d="M835 28h319c10 0 18 8 18 18v338c0 10-8 18-18 18H835z" fill="#ddebcb"/>
+  <path d="M835 28v374" stroke="#a0bd96" stroke-width="2"/>
+  <circle cx="75" cy="78" r="18" fill="#dff09a"/>
+  <text x="75" y="86" text-anchor="middle" fill="#203b2c" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="21" font-weight="700">明</text>
+  <text x="106" y="83" fill="#c7dcc8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" letter-spacing="2">十天中文交互课程</text>
+  <text x="74" y="184" fill="#ffffff" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="64" font-weight="700" letter-spacing="3">把话想明白</text>
+  <text x="75" y="240" fill="#dff09a" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="31" font-weight="600" letter-spacing="3">听出问题 · 查清依据 · 说到点上</text>
+  <text x="77" y="308" fill="#c8d8c8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19">从一句“总觉得不对劲”，练到能准确判断、清楚回应。</text>
+  <rect x="76" y="340" width="124" height="32" rx="16" fill="#dff09a"/>
+  <text x="138" y="362" text-anchor="middle" fill="#203b2c" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15" font-weight="700">零基础可学</text>
+  <rect x="213" y="340" width="124" height="32" rx="16" fill="none" stroke="#77977d"/>
+  <text x="275" y="362" text-anchor="middle" fill="#dff09a" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="15">十天 · 四十小时</text>
+  <text x="875" y="88" fill="#44694a" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="700" letter-spacing="3">学习路径</text>
+  <path d="M902 127v204" stroke="#93b78b" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="902" cy="147" r="11" fill="#2e503a"/>
+  <circle cx="902" cy="231" r="11" fill="#2e503a"/>
+  <circle cx="902" cy="315" r="11" fill="#2e503a"/>
+  <text x="935" y="154" fill="#203b2c" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700">看懂一句话</text>
+  <text x="935" y="238" fill="#203b2c" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700">查清一个判断</text>
+  <text x="935" y="322" fill="#203b2c" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="24" font-weight="700">推进一次对话</text>
+  <text x="875" y="370" fill="#55765a" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16">50 道案例 · 30 场对话练习</text>
+</svg>
